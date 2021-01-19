@@ -7,6 +7,17 @@
         background-position: center center;
         background-attachment: fixed;
         background-size: cover;" data-pg-collapsed>
+        <swiper
+            :slides-per-view="3"
+            :space-between="50"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+        >
+            <swiper-slide>Slide 1</swiper-slide>
+            <swiper-slide>Slide 2</swiper-slide>
+            <swiper-slide>Slide 3</swiper-slide>
+            ...
+        </swiper>
         <div data-pg-name="head" style="background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
@@ -34,9 +45,11 @@
 
 <script>
 import { IonPage } from '@ionic/vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
 export default {
     components:{
-        IonPage
+        IonPage, Swiper, SwiperSlide
     }
 }
 </script>
