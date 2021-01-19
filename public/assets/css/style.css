@@ -1,0 +1,48 @@
+.main-head {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.foot-container {
+    color: #ffffff;
+    text-align: center;
+}
+.links-img-container {
+    width: 45px;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 5px 15px;
+}
+
+.img-logo-container {
+    width: 90%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+}
+
+.logo container {
+    width: 100%;
+}
+.buttons-container{
+  margin-top: 150px;
+}
+.logo-main-container {
+    width: 100%;
+    height: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.home-bt {
+    width: 60%;
+    height: 7vh;
+    background-color: #feff00;
+    border-radius: 100px;
+}
+.rotate-scale-up{-webkit-animation:rotate-scale-up .65s linear alternate both;animation:rotate-scale-up .65s linear alternate both}
+@-webkit-keyframes rotate-scale-up{0%{-webkit-transform:scale(1) rotateZ(0);transform:scale(1) rotateZ(0)}50%{-webkit-transform:scale(2) rotateZ(180deg);transform:scale(2) rotateZ(180deg)}100%{-webkit-transform:scale(1) rotateZ(360deg);transform:scale(1) rotateZ(360deg)}}@keyframes rotate-scale-up{0%{-webkit-transform:scale(1) rotateZ(0);transform:scale(1) rotateZ(0)}50%{-webkit-transform:scale(2) rotateZ(180deg);transform:scale(2) rotateZ(180deg)}100%{-webkit-transform:scale(1) rotateZ(360deg);transform:scale(1) rotateZ(360deg)}}
