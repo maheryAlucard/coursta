@@ -5,29 +5,9 @@
                 <img class="header-img" src="assets/images/pages/cours_headss.png"/>
             </div>
             <div data-pg-name="menus" class="menu-container d-flex flex-row flex-wrap vivify driveInBottom">
-                <div class="container d-flex flex-column align-items-center menu-bt-container">
-                    <img data-pg-name="menuimg" class="menu-img" src="assets/images/pages/bouton_cours_mlg.png"/>
-                </div>
-                <div class="container d-flex flex-column align-items-center menu-bt-container">
-                    <img data-pg-name="menuimg" class="menu-img" src="assets/images/pages/bouton_cours_philo.png"/>
-                </div>
-                <div class="container d-flex flex-column align-items-center menu-bt-container">
-                    <img data-pg-name="menuimg" class="menu-img" src="assets/images/pages/bouton_cours_hg.png"/>
-                </div>
-                <div class="container d-flex flex-column align-items-center menu-bt-container">
-                    <img data-pg-name="menuimg" class="menu-img" src="assets/images/pages/bouton_cours_math.png"/>
-                </div>
-                <div class="container d-flex flex-column align-items-center menu-bt-container">
-                    <img data-pg-name="menuimg" class="menu-img" src="assets/images/pages/bouton_cours_pc.png"/>
-                </div>
-                <div class="container d-flex flex-column align-items-center menu-bt-container">
-                    <img data-pg-name="menuimg" class="menu-img" src="assets/images/pages/bouton_cours_svt.png"/>
-                </div>
-                <div class="container d-flex flex-column align-items-center menu-bt-container">
-                    <img data-pg-name="menuimg" class="menu-img" src="assets/images/pages/bouton_cours_frc.png"/>
-                </div>
-                <div class="container d-flex flex-column align-items-center menu-bt-container">
-                    <img data-pg-name="menuimg" class="menu-img" src="assets/images/pages/bouton_cours_eps.png"/>
+                <div v-for="(button, index) in buttonList" @click="() => router.push(button.routLink)" 
+                    class="container d-flex flex-column align-items-center menu-bt-container" :key="button.routLink+index">
+                    <img data-pg-name="menuimg" class="menu-img" :src="button.imgLink"/>
                 </div>
             </div>
             <div data-pg-name="footer" class="footer d-flex flex-column font-bebase">
@@ -39,9 +19,53 @@
 
 <script>
 import { IonPage } from '@ionic/vue';
+import { useRouter } from 'vue-router';
+
 export default {
+    setup(){
+        const router = useRouter();
+        return { router }
+    },
     components:{
         IonPage
+    },
+    data:function(){
+        return{
+            buttonList:[
+                {
+                    imgLink: 'assets/images/pages/bouton_cours_mlg.png',
+                    routLink:'/cours:mlg'
+                },
+                {
+                    imgLink: 'assets/images/pages/bouton_cours_philo.png',
+                    routLink:'/cours:philo'
+                },
+                {
+                    imgLink: 'assets/images/pages/bouton_cours_hg.png',
+                    routLink:'/cours:hg'
+                },
+                {
+                    imgLink: 'assets/images/pages/bouton_cours_math.png',
+                    routLink:'/cours:math'
+                },
+                {
+                    imgLink: 'assets/images/pages/bouton_cours_pc.png',
+                    routLink:'/cours:pc'
+                },
+                {
+                    imgLink: 'assets/images/pages/bouton_cours_svt.png',
+                    routLink:'/cours:svt'
+                },
+                {
+                    imgLink: 'assets/images/pages/bouton_cours_frc.png',
+                    routLink:'/cours:frc'
+                },
+                {
+                    imgLink: 'assets/images/pages/bouton_cours_eps.png',
+                    routLink:'/cours:eps'
+                }
+            ]
+        }
     }
 }
 </script>

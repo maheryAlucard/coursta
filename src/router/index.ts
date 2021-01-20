@@ -5,6 +5,7 @@ import Tabes from '../views/home-tabe.vue';
 import Home from '../views/home.vue';
 import Cours from '../views/cours/home-cours.vue'
 import Sujet from '../views/sujet/home-sujet.vue'
+import CoursPage from '../views/cours/cours-conten.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -30,6 +31,11 @@ const routes: Array<RouteRecordRaw> = [
   {
     path:'/sujet',
     component: Sujet
+  },
+  {
+    path:'/cours:page',
+    component:CoursPage,
+    props: true
   }
 ]
 
