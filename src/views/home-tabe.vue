@@ -1,27 +1,30 @@
 <template>
     <ion-page>
-        <div data-pg-name="maincontainer" class="d-flex flex-column main-container justify-content-between" style="width: 100%;
-        height: 100vh;
-        background-image: url('assets/images/choiceBackground.jpg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;" data-pg-collapsed>
+        <div data-pg-name="maincontainer" class="d-flex flex-column main-container justify-content-between" style="width: 100%;height: 100vh;background-image: url('assets/images/choiceBackground.jpg');
+        background-repeat: no-repeat;background-position: center center;background-attachment: fixed;background-size: cover;" data-pg-collapsed>
         
-        <div data-pg-name="head" style="background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;" data-pg-collapsed>
+        <div data-pg-name="head" style="background-repeat: no-repeat;background-position: center center;background-attachment: fixed;background-size: cover;" data-pg-collapsed>
             <div class="container main-head" data-pg-name="page-head">
                 <p style="margin-bottom: 0;">coursta.mg</p>
             </div>
         </div>
         <div data-pg-name="center" data-pg-collapsed>
-            <div class="container logo-main-container" data-pg-name="logo" data-pg-collapsed>
-                <div class="container img-logo-container" data-pg-name="imgloco">
-                    <img src="assets/images/cours.png" alt="" class="logo-img">
-                </div>
-            </div>
+            <ion-slides pager="true" :options="slideOpts">
+                <ion-slide>
+                    <div @click="() => router.push('/cours')" class="container logo-main-container" data-pg-name="logo" data-pg-collapsed>
+                        <div class="container img-logo-container" data-pg-name="imgloco">
+                            <img src="assets/images/cours.png" alt="" class="logo-img">
+                        </div>
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div @click="() => router.push('/sujet')" class="container logo-main-container" data-pg-name="logo" data-pg-collapsed>
+                        <div class="container img-logo-container" data-pg-name="imgloco">
+                            <img src="assets/images/sujet.png" alt="" class="logo-img">
+                        </div>
+                    </div>
+                </ion-slide>
+            </ion-slides>
         </div>
         <div data-pg-name="footer" data-pg-collapsed>
             <div class="container foot-container">
@@ -35,10 +38,25 @@
 
 <script>
 import { IonPage } from '@ionic/vue';
+import { IonSlides, IonSlide } from '@ionic/vue';
+import { useRouter } from 'vue-router';
 
 export default {
     components:{
-        IonPage
+        IonPage, IonSlides, IonSlide
+    },
+    data:function(){
+        return{
+
+        }
+    },
+    setup(){
+        const slideOpts = {
+        initialSlide: 0,
+        speed: 400
+        };
+        const router = useRouter();
+        return { slideOpts, router }
     }
 }
 </script>

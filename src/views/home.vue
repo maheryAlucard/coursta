@@ -27,7 +27,7 @@
                     <div class="container links-img-container" data-pg-name="facebook" style="background-image: url('assets/images/bouton_web.png');"></div>
                 </a>
             </div>
-            <div class="container logo-main-container rotate-scale-up" data-pg-name="logo" data-pg-collapsed>
+            <div class="container logo-main-container-home rotate-scale-up" data-pg-name="logo" data-pg-collapsed>
                 <div class="container img-logo-container" data-pg-name="imgloco">
                     <img src="assets/images/logo.png" alt="" class="logo-img">
                 </div>

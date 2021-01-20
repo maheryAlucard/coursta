@@ -3,6 +3,8 @@ import { RouteRecordRaw } from 'vue-router';
 import Pages from '../views/Pages.vue';
 import Tabes from '../views/home-tabe.vue';
 import Home from '../views/home.vue';
+import Cours from '../views/cours/home-cours.vue'
+import Sujet from '../views/sujet/home-sujet.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -20,6 +22,14 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/home',
     component: Home
+  },
+  {
+    path:'/cours',
+    component: Cours
+  },
+  {
+    path:'/sujet',
+    component: Sujet
   }
 ]
 
