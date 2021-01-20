@@ -11,14 +11,14 @@
         <div data-pg-name="center" data-pg-collapsed>
             <ion-slides pager="true" :options="slideOpts">
                 <ion-slide>
-                    <div @click="() => router.push('/cours')" class="container logo-main-container" data-pg-name="logo" data-pg-collapsed>
+                    <div @click="() => router.push('/cours')" class="container logo-main-container vivify pullUp" data-pg-name="logo" data-pg-collapsed>
                         <div class="container img-logo-container" data-pg-name="imgloco">
                             <img src="assets/images/cours.png" alt="" class="logo-img">
                         </div>
                     </div>
                 </ion-slide>
                 <ion-slide>
-                    <div @click="() => router.push('/sujet')" class="container logo-main-container" data-pg-name="logo" data-pg-collapsed>
+                    <div @click="() => router.push('/sujet')" class="container logo-main-container vivify pullUp" data-pg-name="logo" data-pg-collapsed>
                         <div class="container img-logo-container" data-pg-name="imgloco">
                             <img src="assets/images/sujet.png" alt="" class="logo-img">
                         </div>

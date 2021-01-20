@@ -1,10 +1,10 @@
 <template>
     <ion-page>
         <div data-pg-name="main-cont" class="main-container d-flex flex-column justify-content-between" style="background-image: url('assets/images/pages/cours_background.jpg');">
-            <div class="header" data-pg-name="header">
+            <div class="header vivify driveInTop" data-pg-name="header">
                 <img class="header-img" src="assets/images/pages/cours_headss.png"/>
             </div>
-            <div data-pg-name="menus" class="menu-container d-flex flex-row flex-wrap">
+            <div data-pg-name="menus" class="menu-container d-flex flex-row flex-wrap vivify driveInBottom">
                 <div class="container d-flex flex-column align-items-center menu-bt-container">
                     <img data-pg-name="menuimg" class="menu-img" src="assets/images/pages/bouton_cours_mlg.png"/>
                 </div>

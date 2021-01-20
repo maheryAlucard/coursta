@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="container buttons-container" data-pg-name="buttons">
-                <div class="container bt-container d-flex flex-column align-items-center" data-pg-name="btcontainer">
+                <div class="container bt-container d-flex flex-column align-items-center vivify popIn" data-pg-name="btcontainer">
                     <button type="button" @click="() => router.push('/Tabes')" class="btn home-bt">Literaire</button>
                 </div>
             </div>
