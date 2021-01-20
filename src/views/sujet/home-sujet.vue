@@ -11,21 +11,21 @@
                     </div>
                     <div class="container menu-list" data-pg-name="menulist">
                         <div class="container d-flex flex-row justify-content-between align-items-center menu-liste-ligne">
-                            <div class="flex-row d-flex" style="width: 100%;">
+                            <div class="flex-row d-flex align-items-center font-bebase" style="width: 100%;">
                                 <img src="assets/images/pages/arrow.svg" style="width: 20px; height: 30px; margin-right: 10px;"/>
                                 <p class="menu-list-text">MALAGASY</p>
                             </div>
                             <p class="menu-list-secondary-text">Paragraph</p>
                         </div>
                         <div class="container d-flex flex-row justify-content-between align-items-center menu-liste-ligne">
-                            <div class="flex-row d-flex" style="width: 100%;">
+                            <div class="flex-row d-flex align-items-center font-bebase" style="width: 100%;">
                                 <img src="assets/images/pages/arrow.svg" style="width: 20px; height: 30px; margin-right: 10px;"/>
                                 <p class="menu-list-text">MALAGASY</p>
                             </div>
                             <p class="menu-list-secondary-text">Paragraph</p>
                         </div>
                         <div class="container d-flex flex-row justify-content-between align-items-center menu-liste-ligne">
-                            <div class="flex-row d-flex" style="width: 100%;">
+                            <div class="flex-row d-flex align-items-center font-bebase" style="width: 100%;">
                                 <img src="assets/images/pages/arrow.svg" style="width: 20px; height: 30px; margin-right: 10px;"/>
                                 <p class="menu-list-text">MALAGASY</p>
                             </div>
@@ -39,21 +39,21 @@
                     </div>
                     <div class="container menu-list" data-pg-name="menulist">
                         <div class="container d-flex flex-row justify-content-between align-items-center menu-liste-ligne">
-                            <div class="flex-row d-flex" style="width: 100%;">
+                            <div class="flex-row d-flex align-items-center font-bebase" style="width: 100%;">
                                 <img src="assets/images/pages/arrow.svg" style="width: 20px; height: 30px; margin-right: 10px;"/>
                                 <p class="menu-list-text">MALAGASY</p>
                             </div>
                             <p class="menu-list-secondary-text">Paragraph</p>
                         </div>
                         <div class="container d-flex flex-row justify-content-between align-items-center menu-liste-ligne">
-                            <div class="flex-row d-flex" style="width: 100%;">
+                            <div class="flex-row d-flex align-items-center font-bebase" style="width: 100%;">
                                 <img src="assets/images/pages/arrow.svg" style="width: 20px; height: 30px; margin-right: 10px;"/>
                                 <p class="menu-list-text">MALAGASY</p>
                             </div>
                             <p class="menu-list-secondary-text">Paragraph</p>
                         </div>
                         <div class="container d-flex flex-row justify-content-between align-items-center menu-liste-ligne">
-                            <div class="flex-row d-flex" style="width: 100%;">
+                            <div class="flex-row d-flex align-items-center font-bebase" style="width: 100%;">
                                 <img src="assets/images/pages/arrow.svg" style="width: 20px; height: 30px; margin-right: 10px;"/>
                                 <p class="menu-list-text">MALAGASY</p>
                             </div>
@@ -67,21 +67,21 @@
                     </div>
                     <div class="container menu-list" data-pg-name="menulist">
                         <div class="container d-flex flex-row justify-content-between align-items-center menu-liste-ligne">
-                            <div class="flex-row d-flex" style="width: 100%;">
+                            <div class="flex-row d-flex align-items-center font-bebase" style="width: 100%;">
                                 <img src="assets/images/pages/arrow.svg" style="width: 20px; height: 30px; margin-right: 10px;"/>
                                 <p class="menu-list-text">MALAGASY</p>
                             </div>
                             <p class="menu-list-secondary-text">Paragraph</p>
                         </div>
                         <div class="container d-flex flex-row justify-content-between align-items-center menu-liste-ligne">
-                            <div class="flex-row d-flex" style="width: 100%;">
+                            <div class="flex-row d-flex align-items-center font-bebase" style="width: 100%;">
                                 <img src="assets/images/pages/arrow.svg" style="width: 20px; height: 30px; margin-right: 10px;"/>
                                 <p class="menu-list-text">MALAGASY</p>
                             </div>
                             <p class="menu-list-secondary-text">Paragraph</p>
                         </div>
                         <div class="container d-flex flex-row justify-content-between align-items-center menu-liste-ligne">
-                            <div class="flex-row d-flex" style="width: 100%;">
+                            <div class="flex-row d-flex align-items-center font-bebase" style="width: 100%;">
                                 <img src="assets/images/pages/arrow.svg" style="width: 20px; height: 30px; margin-right: 10px;"/>
                                 <p class="menu-list-text">MALAGASY</p>
                             </div>
@@ -111,11 +111,14 @@ export default {
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    overflow-y: auto;
 }
 
 .sujet-head {
     width: 100%;
     position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .su-menu-style {
@@ -126,8 +129,7 @@ export default {
 .menu-list-text {
     margin-bottom: 0;
     color: #ffffff;
-    font-weight: 600;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .menu-list {

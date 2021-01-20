@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "bebase";
+    src: url("bebas.otf");
+  }
+
+.font-bebase{
+    font-family: "bebase";
+}

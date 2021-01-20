@@ -30,7 +30,7 @@
                     <img data-pg-name="menuimg" class="menu-img" src="assets/images/pages/bouton_cours_eps.png"/>
                 </div>
             </div>
-            <div data-pg-name="footer" class="footer d-flex flex-column">
+            <div data-pg-name="footer" class="footer d-flex flex-column font-bebase">
                 <p>- LES MATIERES -&nbsp;</p>
             </div>
         </div>
