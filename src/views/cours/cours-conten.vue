@@ -1,13 +1,13 @@
 <template>
     <ion-page>
-        <Malagasy v-if="page == ':mlg'"></Malagasy>
-        <Eps v-if="page == ':eps'"></Eps>
-        <Francais v-if="page == ':frc'"></Francais>
-        <HistoGeo v-if="page == ':hg'"></HistoGeo>
-        <Mathc v-if="page == ':math'"></Mathc>
-        <Philo v-if="page == ':philo'"></Philo>
-        <Pc v-if="page == ':pc'"></Pc>
-        <Svt v-if="page == ':svt'"></Svt>
+        <Malagasy v-if="page == 'mlg'"></Malagasy>
+        <Eps v-if="page == 'eps'"></Eps>
+        <Francais v-if="page == 'frc'"></Francais>
+        <HistoGeo v-if="page == 'hg'"></HistoGeo>
+        <Mathc v-if="page == 'math'"></Mathc>
+        <Philo v-if="page == 'philo'"></Philo>
+        <Pc v-if="page == 'pc'"></Pc>
+        <Svt v-if="page == 'svt'"></Svt>
     </ion-page>
 </template>
 

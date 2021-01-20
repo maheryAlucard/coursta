@@ -34,35 +34,35 @@ export default {
             buttonList:[
                 {
                     imgLink: 'assets/images/pages/bouton_cours_mlg.png',
-                    routLink:'/cours:mlg'
+                    routLink:'/cours/mlg'
                 },
                 {
                     imgLink: 'assets/images/pages/bouton_cours_philo.png',
-                    routLink:'/cours:philo'
+                    routLink:'/cours/philo'
                 },
                 {
                     imgLink: 'assets/images/pages/bouton_cours_hg.png',
-                    routLink:'/cours:hg'
+                    routLink:'/cours/hg'
                 },
                 {
                     imgLink: 'assets/images/pages/bouton_cours_math.png',
-                    routLink:'/cours:math'
+                    routLink:'/cours/math'
                 },
                 {
                     imgLink: 'assets/images/pages/bouton_cours_pc.png',
-                    routLink:'/cours:pc'
+                    routLink:'/cours/pc'
                 },
                 {
                     imgLink: 'assets/images/pages/bouton_cours_svt.png',
-                    routLink:'/cours:svt'
+                    routLink:'/cours/svt'
                 },
                 {
                     imgLink: 'assets/images/pages/bouton_cours_frc.png',
-                    routLink:'/cours:frc'
+                    routLink:'/cours/frc'
                 },
                 {
                     imgLink: 'assets/images/pages/bouton_cours_eps.png',
-                    routLink:'/cours:eps'
+                    routLink:'/cours/eps'
                 }
             ]
         }

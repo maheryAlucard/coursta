@@ -33,7 +33,7 @@ const routes: Array<RouteRecordRaw> = [
     component: Sujet
   },
   {
-    path:'/cours:page',
+    path:'/cours/:page',
     component:CoursPage,
     props: true
   }
